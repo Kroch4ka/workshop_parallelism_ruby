@@ -23,6 +23,7 @@ group :development do
 end
 
 gem "parallel", "~> 1.26.3"
+gem "async"
 gem "sidekiq", "~> 7.3.6"
 
 gem "activerecord-import", "~> 2.0"
