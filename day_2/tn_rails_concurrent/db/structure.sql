@@ -79,7 +79,8 @@ CREATE TABLE public.products (
     stock integer,
     price numeric,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    orders_count integer DEFAULT 0 NOT NULL
 );
 
 
@@ -164,6 +165,7 @@ ALTER TABLE ONLY public.schema_migrations
 SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
+('20241227185054'),
 ('20241216120643'),
 ('20241216120641');
 

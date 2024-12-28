@@ -26,3 +26,4 @@ gem "parallel", "~> 1.26.3"
 gem "sidekiq", "~> 7.3.6"
 
 gem "activerecord-import", "~> 2.0"
+gem "active_model_serializers"
